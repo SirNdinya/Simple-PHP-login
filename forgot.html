@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recover Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="POST" action="process_recovery.php">
+        <h1 style="text-align: center; margin-bottom: 30px;">Recover Password</h1>
+        <div>
+            <label for="recovery_username">Username:</label>
+            <input type="text" name="recovery_username" id="recovery_username" placeholder="Enter your username" required>
+        </div>
+        <div>
+            <label for="recovery_email">Email:</label>
+            <input type="email" name="recovery_email" id="recovery_email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="new_password">New Password:</label>
+            <input type="password" name="new_password" id="new_password" placeholder="Enter new password" required>
+        </div>
+        <div>
+            <label for="confirm_new_password">Confirm Password:</label>
+            <input type="password" name="confirm_new_password" id="confirm_new_password" placeholder="Confirm new password" required>
+        </div>
+        <div>
+            <input type="submit" value="Recover">
+        </div>
+    </form>
+</body>
+</html>
