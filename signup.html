@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="POST" action="register_user.php">
+        <h1 style="text-align: center; margin-bottom: 30px;">User Registration</h1>
+        <div>
+            <label for="reg_username">Username:</label>
+            <input type="text" name="reg_username" id="reg_username" placeholder="Enter your username" required>
+        </div>
+        <div>
+            <label for="reg_email">Email:</label>
+            <input type="email" name="reg_email" id="reg_email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="reg_password">Password:</label>
+            <input type="password" name="reg_password" id="reg_password" placeholder="Enter a password" required>
+        </div>
+        <div>
+            <label for="confirm_reg_password">Confirm Password:</label>
+            <input type="password" name="confirm_reg_password" id="confirm_reg_password" placeholder="Re-enter password" required>
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+        <div class="sign">
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </div>
+    </form>
+</body>
+</html>
